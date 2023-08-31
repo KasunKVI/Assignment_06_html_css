@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders - KS Pos System</title>
+
+    <meta name="viewPort" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico"  href="assets/images/favicon/favicon.ico">
+</head>
+
+<body>
+
+
+<header>
+
+    <section>
+        <picture>
+            <source srcset="../assets/images/logo/Favicon.png" type="image/png" title="logo">
+            <img src="assets/images/logo/Favicon.png" width="57">
+        </picture>
+
+        <!--        <img src="/assets/images/icons8-menu-128.png" alt="" width="50" id="menu">-->
+        <nav>
+            <dl id="header_navigation">
+                <dd><a href="#">Home</a></dd>
+                <dd><a href="#">Store</a></dd>
+                <dd><a href="#">Customer</a></dd>
+                <dd><a href="#">Orders</a></dd>
+            </dl>
+        </nav>
+    </section>
+</header>
+
+<main>
+
+    <section class="container">
+        <header>Invoice Details</header>
+        <form class="form" action="#">
+            <div class="input-box">
+                <label for="order_id">Order ID</label>
+                <input required="" placeholder="Order Id" type="text" id="order_id">
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label for="customer_iD">Customer ID</label>
+                    <input required="" id="customer_iD" placeholder="Customer Id" type="text">
+                </div>
+                <div class="input-box">
+                    <label for="date">Date</label>
+                    <input required="" id="date"  placeholder="Date" type="date">
+                </div>
+                <div class="input-box">
+                    <label for="contact"> Contact </label>
+                    <input required="" placeholder="Contact" id="contact" type="tel">
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="container_item">
+        <header>Item Details</header>
+        <form class="form" action="#">
+
+            <div class="column">
+                <div class="select-box">
+                    <label for="Item"></label>
+                    <select id="Item">
+                        <option hidden="">Size</option>
+                        <option>None</option>
+                        <option>220g</option>
+                        <option>450g</option>
+                        <option>1kg</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="name">Name</label>
+                <input required="" placeholder="Name" type="text" id="name">
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label for="item_price">Price</label>
+                    <input required="" id="item_price" placeholder="Item Price" type="text">
+                </div>
+                <div class="input-box">
+                    <label for="exp_date">Exp Date</label>
+                    <input required="" id="exp_date"  placeholder="Item Expire Date" type="text">
+                </div>
+            </div>
+
+            <div class="input-box other">
+                <label for="item_qty">Qty</label>
+                <input required="" placeholder="Item Quantity" id="item_qty" type="number">
+
+            </div>
+
+            <button type="button"> Add to Cart</button>
+        </form>
+    </section>
+
+    <div class="container2">
+        <div class="card cart">
+            <label class="title">Total</label>
+            <div class="steps">
+                <div class="step">
+                    <hr>
+                    <div>
+                        <span>PAYMENT METHOD</span>
+                        <p>Visa</p>
+                        <p>**** **** **** 4243</p>
+                    </div>
+                    <hr>
+                    <div class="promo">
+                        <span>HAVE A PROMO CODE?</span>
+                        <form class="form">
+                            <input class="input_field" placeholder="Enter a Promo Code" type="text">
+                            <button>Apply</button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="payments">
+                        <span>PAYMENT</span>
+                        <div class="details">
+                            <span>Subtotal:</span>
+                            <span>$240.00</span>
+                            <span>Offer:</span>
+                            <span>$10.00</span>
+                            <span>Tax:</span>
+                            <span>$30.40</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card checkout">
+            <div class="footer">
+                <label class="price">$280.40</label>
+                <button class="checkout-btn">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <table border="1">
+            <thead>
+            <th>Item Id</th>
+            <th>Item Name</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+            </thead>
+            <tbody>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <section class="container3">
+        <header>Order Details</header>
+        <form class="form" action="#">
+            <div class="input-box">
+                <label for="id">Order ID</label>
+                <input required="" placeholder="Order Id" type="text" id="id">
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label for="c_Id">Customer ID</label>
+                    <input required="" id="c_Id" placeholder="Customer Id" type="text">
+                </div>
+                <div class="input-box">
+                    <label for="c_name">Customer Name</label>
+                    <input required="" id="c_name" placeholder="Customer Name" type="text">
+                </div>
+                <div class="input-box">
+                    <label for="O_date">Date</label>
+                    <input required="" id="O_date"  placeholder="Date" type="date">
+                </div>
+                <div class="input-box">
+                    <label for="c_contact"> Contact </label>
+                    <input required="" placeholder="Contact" id="c_contact" type="tel">
+                </div>
+                <div class="input-box">
+                    <label for="balance"> Balance </label>
+                    <input required="" placeholder="Contact" id="balance" type="number">
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <div>
+        <button type="button">Update Order</button>
+        <button type="button">Remove Order</button>
+        <button type="button"> View Orders</button>
+    </div>
+
+</main>
+
+<footer>
+    <h5>Log Out</h5>
+    <a href=""><img src="assets/images/icons8-logout-80.png" alt="Log Out" ></a>
+</footer>
+</body>
+</html>
