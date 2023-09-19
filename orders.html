@@ -13,22 +13,59 @@
 
 <header>
 
-    <section>
-        <picture>
-            <source srcset="../assets/images/logo/Favicon.png" type="image/png" title="logo">
-            <img src="assets/images/logo/Favicon.png" width="57">
-        </picture>
+    <div class="header-navbar d-flex align-items-center justify-content-between">
+        <div class="header-menu d-lg-flex align-items-center">
+            <a class="logo" href="index.html">
+                <img src="assets/images/logo.png" alt="Logo">
+            </a> <!-- Logo -->
 
-        <!--        <img src="/assets/images/icons8-menu-128.png" alt="" width="50" id="menu">-->
-        <nav>
-            <dl id="header_navigation">
-                <dd><a href="#">Home</a></dd>
-                <dd><a href="#">Store</a></dd>
-                <dd><a href="#">Customer</a></dd>
-                <dd><a href="#">Orders</a></dd>
-            </dl>
-        </nav>
-    </section>
+            <nav class="header-nav">
+
+                <div class="mobile-close d-lg-none">
+                    <a href="#javascript:void(0)">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+
+                <ul class="menu-bar d-lg-flex">
+                    <li><a class="active" href="index.html">Home </a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li class="menu-item-has-children"><a href="">Page Features</a>
+                        <ul class="sub-menu">
+                            <li><a href="pos-page.html">POS</a></li>
+                            <li><a href="dine-in.html">Dine In</a></li>
+                            <li><a href="crm-page.html">CRM</a></li>
+                            <li><a href="back-office.html">Back Office</a></li>
+                            <li><a href="delivery.html">Delivery Manager</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul> <!-- menu-bar -->
+            </nav>
+        </div> <!-- header menu -->
+
+        <div class="header-btn d-none d-sm-block">
+            <ul>
+                <li><a class="login" href="#">Login</a></li>
+                <li><a class="Try" href="#">Try For Free</a></li>
+            </ul>
+        </div> <!-- header btn -->
+
+        <div class="mobile-toggle d-lg-none">
+            <a href="#javascript:void(0)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
 </header>
 
 <main>
