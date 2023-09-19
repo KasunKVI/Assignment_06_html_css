@@ -3,59 +3,31 @@ main{
     padding-bottom: 180vh;
 }
 #account_details{
-    position: absolute;
     border: 2px solid;
     border-color: white white brown brown;
+    text-align: center;
+    margin-left: 25vw;
 }
-#user_image{
-    position: absolute;
-    aspect-ratio: 1/1;
+#account_details>div>img{
     border-radius: 50%;
-    background-image: url("/assets/images/219969.png");
-    background-position: center;
-    background-size: cover;
-
+    padding-top: 80px;
 }
-#about_user{
-    position: absolute;
+#account_details>div>div>h3{
+    margin-top: 5vh;
 }
-#log_out{
-    position: absolute;
+#account_details>div>div>p{
+    margin-top: 5vh;
 }
-#log_out:hover{
-    background: red;
-    color: white;
+#account_details>div>button{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
-#Stocks{
-    position: absolute;
-    background: #f9f9f9 ;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.exp_items{
+    display: flex;
+    align-items: center;
 }
-#Stocks>h4{
-    background: #64EBCA;
-    height: 4.5vh;
-    border-radius: 20px 20px 0 0;
-}
-#st_images>img{
-    display: block;
-    position: absolute;
-
-}
-#products{
-    position: absolute;
-}
-#promotions{
-    position: absolute;
-    background: #f9f9f9 ;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-#promotions>h3{
-    position: absolute;
-}
-#place_order{
-    position: absolute;
+.exp_items>img{
+    margin-left: 30px;
 }
 footer{
     position: relative;
@@ -69,80 +41,25 @@ footer>h4{
     position: absolute;
 
 }
-
+#sales_chart{
+    margin-left: 15vw;
+    margin-top: 20vh;
+}
+#row2{
+    padding-top: 25vh;
+}
+#stocks{
+    padding-left: 20vw;
+}
+#row3{
+    padding-top: 20vh;
+}
+.promo{
+    padding-left: 18vw ;
+}
 @media all and (min-width:1440px){
-    #sales_chart{
-        position: absolute;
-        left: 10vw;
-        top: 25vh;
-        width: 600px;
-        height: 300px;
-    }
-    #account_details{
-        right: 0;
-        width: 28vw;
-        height: 85vh;
 
-    }
-    #user_image {
-        width: 200px;
-        right: 6vw;
-        top: 5vh;
-    }
-    #about_user{
-        top: 35vh;
-        left: 5vw;
-    }
-    #about_user>h4{
-        padding-top: 6vh;
-    }
-    #log_out{
-        top: 75vh;
-        right: 3vw;
-    }
-    #Stocks{
-        top: 90vh;
-        left: 22vw;
-        width: 20vw;
-        height: 35vh;
-    }
-    #Stocks>h4{
-        font-size: 19px;
-        padding-top: 4px;
-        padding-left: 7px;
-    }
-    #st_images>img{
-        right: 2vw;
-        top: 10vh;
-    }
-    #st_images>img:nth-child(2){
-        padding-top: 10vh;
-    }
-    #products{
-        left: 2vw;
-        top: 11vh;
-    }
-    #products>h6:nth-child(2){
-        padding-top: 7vh;
-    }
-    #promotions{
-        width: 22vw;
-        height: 40vh;
-        top: 140vh;
-        left: 22vw;
-    }
-    #promotions>h3{
-        padding-top: 2vh;
-        padding-left: 2vw;
-    }
-    #place_order{
-        right: 8vw;
-        top: 115vh;
-    }
-    #place_order>a>img{
-        width: 200px;
-        aspect-ratio: 1/1;
-    }
+
     #company_logo{
         width: 120px;
         height: 80px;
