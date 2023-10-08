@@ -6,6 +6,12 @@
 
     <meta name="viewPort" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico"  href="assets/images/favicon/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/MDB5-STANDARD-UI-KIT-Free-6.4.1/css/mdb.min.css">
+    <link rel="stylesheet" href="assets/css/orders.css">
+
 </head>
 
 <body>
@@ -13,237 +19,305 @@
 
 <header>
 
-    <div class="header-navbar d-flex align-items-center justify-content-between">
-        <div class="header-menu d-lg-flex align-items-center">
-            <a class="logo" href="index.html">
-                <img src="assets/images/logo.png" alt="Logo">
-            </a> <!-- Logo -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
 
-            <nav class="header-nav">
-
-                <div class="mobile-close d-lg-none">
-                    <a href="#javascript:void(0)">
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-
-                <ul class="menu-bar d-lg-flex">
-                    <li><a class="active" href="index.html">Home </a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li class="menu-item-has-children"><a href="">Page Features</a>
-                        <ul class="sub-menu">
-                            <li><a href="pos-page.html">POS</a></li>
-                            <li><a href="dine-in.html">Dine In</a></li>
-                            <li><a href="crm-page.html">CRM</a></li>
-                            <li><a href="back-office.html">Back Office</a></li>
-                            <li><a href="delivery.html">Delivery Manager</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children"><a href="blog.html">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul> <!-- menu-bar -->
-            </nav>
-        </div> <!-- header menu -->
-
-        <div class="header-btn d-none d-sm-block">
-            <ul>
-                <li><a class="login" href="#">Login</a></li>
-                <li><a class="Try" href="#">Try For Free</a></li>
-            </ul>
-        </div> <!-- header btn -->
-
-        <div class="mobile-toggle d-lg-none">
-            <a href="#javascript:void(0)">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a class="navbar-brand" href="#">
+                <h2>KMart</h2>
+                <img src="assets/images/logo/Favicon.png" alt="Bootstrap" width="60" height="54">
             </a>
+
+            <div class="ml-auto" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="item.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders.html">Orders</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
+
 </header>
 
 <main>
 
     <section class="container">
-        <header>Invoice Details</header>
-        <form class="form" action="#">
-            <div class="input-box">
-                <label for="order_id">Order ID</label>
-                <input required="" placeholder="Order Id" type="text" id="order_id">
+
+        <form id="invoice_detail">
+
+            <legend> Invoice Details </legend>
+
+            <div class="row mb-4">
+                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="I001">
+                    <label for="floatingInput">Order ID</label>
+                </div>
+                <div class="col">
+                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                        <input type="date" class="form-control" id="floatingInput2" placeholder="10/05/2022">
+                        <label for="floatingInput2">Date</label>
+                    </div>
+                </div>
             </div>
 
-            <div class="column">
-                <div class="input-box">
-                    <label for="customer_iD">Customer ID</label>
-                    <input required="" id="customer_iD" placeholder="Customer Id" type="text">
+            <div class="row mb-4">
+                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                    <input type="text" class="form-control" id="floatingInput3" placeholder="C001">
+                    <label for="floatingInput3"> Customer Id</label>
                 </div>
-                <div class="input-box">
-                    <label for="date">Date</label>
-                    <input required="" id="date"  placeholder="Date" type="date">
+                <div class="col">
+                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                        <input type="text" class="form-control" id="floatingInput4" placeholder="Kamal">
+                        <label for="floatingInput4">Customer Name</label>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <label for="contact"> Contact </label>
-                    <input required="" placeholder="Contact" id="contact" type="tel">
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                        <input type="tel" class="form-control" id="floatingInput5" placeholder="07********">
+                        <label for="floatingInput5">Customer Contact</label>
+                    </div>
                 </div>
+
             </div>
 
         </form>
     </section>
 
-    <section class="container_item">
-        <header>Item Details</header>
-        <form class="form" action="#">
+    <div class="row">
 
-            <div class="column">
-                <div class="select-box">
-                    <label for="Item"></label>
-                    <select id="Item">
-                        <option hidden="">Size</option>
-                        <option>None</option>
-                        <option>220g</option>
-                        <option>450g</option>
-                        <option>1kg</option>
-                    </select>
-                </div>
-            </div>
+        <div class="col col-lg-8">
+            <section class="container_item">
 
-            <div class="input-box">
-                <label for="name">Name</label>
-                <input required="" placeholder="Name" type="text" id="name">
-            </div>
-            <div class="column">
-                <div class="input-box">
-                    <label for="item_price">Price</label>
-                    <input required="" id="item_price" placeholder="Item Price" type="text">
-                </div>
-                <div class="input-box">
-                    <label for="exp_date">Exp Date</label>
-                    <input required="" id="exp_date"  placeholder="Item Expire Date" type="text">
-                </div>
-            </div>
+                <form id="item_Details">
 
-            <div class="input-box other">
-                <label for="item_qty">Qty</label>
-                <input required="" placeholder="Item Quantity" id="item_qty" type="number">
+                <legend>Item Details</legend>
 
-            </div>
-
-            <button type="button"> Add to Cart</button>
-        </form>
-    </section>
-
-    <div class="container2">
-        <div class="card cart">
-            <label class="title">Total</label>
-            <div class="steps">
-                <div class="step">
-                    <hr>
-                    <div>
-                        <span>PAYMENT METHOD</span>
-                        <p>Visa</p>
-                        <p>**** **** **** 4243</p>
+                    <div class="row mb-4">
+                        <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                            <input type="text" class="form-control" id="floatingInput6" placeholder="S001">
+                            <label for="floatingInput6">Item ID</label>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating mb-3 mt-5 col-lg-8">
+                                <input type="number" class="form-control" id="floatingInput7" placeholder="12">
+                                <label for="floatingInput7">QTY</label>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="promo">
-                        <span>HAVE A PROMO CODE?</span>
-                        <form class="form">
-                            <input class="input_field" placeholder="Enter a Promo Code" type="text">
-                            <button>Apply</button>
-                        </form>
+                    <div class="row mb-4">
+                        <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                            <input type="text" class="form-control" id="floatingInput8" placeholder="Biscuits">
+                            <label for="floatingInput8">Item Name</label>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating mb-3 mt-5 col-lg-8">
+                                <input type="text" class="form-control" id="floatingInput9" placeholder="120.50">
+                                <label for="floatingInput9">Price</label>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="payments">
-                        <span>PAYMENT</span>
-                        <div class="details">
-                            <span>Subtotal:</span>
-                            <span>$240.00</span>
-                            <span>Offer:</span>
-                            <span>$10.00</span>
-                            <span>Tax:</span>
-                            <span>$30.40</span>
+
+                    <div class="row mb-4">
+                        <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                            <input type="date" class="form-control" id="floatingInput10" placeholder="05/05/2024">
+                            <label for="floatingInput10">Exp Date</label>
+                        </div>
+                        <div class="col">
+                            <div class="select-box">
+                                <label for="Item"></label>
+                                <select id="Item">
+                                    <option hidden="">Size</option>
+                                    <option>None</option>
+                                    <option>220g</option>
+                                    <option>450g</option>
+                                    <option>1kg</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-lg-8"></div>
+                        <div class="col mt-5 col-lg-2">
+                            <button type="button" class="btn btn-danger">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+
+
+
+            <div class="col col-lg-4">
+                <div id="total">
+                    <div class="container2">
+                        <div class="card cart">
+                            <label class="title">Total</label>
+                            <div class="steps">
+                                <div class="step">
+                                    <hr>
+                                    <div>
+                                        <span>PAYMENT METHOD</span>
+                                        <p>Visa</p>
+                                        <p>**** **** **** 4243</p>
+                                    </div>
+                                    <hr>
+                                    <div class="promo">
+                                        <span>HAVE A PROMO CODE?</span>
+                                        <form class="form">
+                                            <input class="input_field" placeholder="Enter a Promo Code" type="text">
+                                            <button>Apply</button>
+                                        </form>
+                                    </div>
+                                    <hr>
+                                    <div class="payments">
+                                        <span>PAYMENT</span>
+                                        <div class="details">
+                                            <span>Subtotal:</span>
+                                            <span>$240.00</span>
+                                            <span>Offer:</span>
+                                            <span>$10.00</span>
+                                            <span>Tax:</span>
+                                            <span>$30.40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card checkout">
+                            <div class="footer">
+                                <label class="price">$280.40</label>
+                                <button class="checkout-btn">Place Order</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card checkout">
-            <div class="footer">
-                <label class="price">$280.40</label>
-                <button class="checkout-btn">Place Order</button>
-            </div>
-        </div>
     </div>
 
     <section>
-        <table border="1">
-            <thead>
-            <th>Item Id</th>
-            <th>Item Name</th>
-            <th>Qty</th>
-            <th>Price</th>
-            <th>Total</th>
-            </thead>
-            <tbody>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            </tbody>
-        </table>
+
+
+        <div class="row">
+
+            <div class="col col-lg-2"></div>
+            <div class="col col-lg-8">
+                <table class="table table-hover table-striped-columns">
+                    <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Item Id</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-dark">
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Bsc</td>
+                        <td>100</td>
+                        <td>2</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I002</th>
+                        <td>Hawayan Coockies</td>
+                        <td>250</td>
+                        <td>1</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I003</th>
+                        <td >Milk Short Cacke</td>
+                        <td>190</td>
+                        <td>3</td>
+                        <td>570</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col col-lg-2"></div>
+        </div>
+
     </section>
 
 
-    <section class="container3">
-        <header>Order Details</header>
+    <section id="order_details">
+
         <form class="form" action="#">
-            <div class="input-box">
-                <label for="id">Order ID</label>
-                <input required="" placeholder="Order Id" type="text" id="id">
-            </div>
 
-            <div class="column">
-                <div class="input-box">
-                    <label for="c_Id">Customer ID</label>
-                    <input required="" id="c_Id" placeholder="Customer Id" type="text">
+            <legend>Order Details</legend>
+
+            <div class="row mb-4">
+                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                    <input type="text" class="form-control" id="floatingInput11" placeholder="S001">
+                    <label for="floatingInput11">Order ID</label>
                 </div>
-                <div class="input-box">
-                    <label for="c_name">Customer Name</label>
-                    <input required="" id="c_name" placeholder="Customer Name" type="text">
-                </div>
-                <div class="input-box">
-                    <label for="O_date">Date</label>
-                    <input required="" id="O_date"  placeholder="Date" type="date">
-                </div>
-                <div class="input-box">
-                    <label for="c_contact"> Contact </label>
-                    <input required="" placeholder="Contact" id="c_contact" type="tel">
-                </div>
-                <div class="input-box">
-                    <label for="balance"> Balance </label>
-                    <input required="" placeholder="Contact" id="balance" type="number">
+                <div class="col">
+                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                        <input type="text" class="form-control" id="floatingInput12" placeholder="12">
+                        <label for="floatingInput12">Customer ID</label>
+                    </div>
                 </div>
             </div>
+            <div class="row mb-4">
+                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                    <input type="text" class="form-control" id="floatingInput13" placeholder="Biscuits">
+                    <label for="floatingInput13">Name</label>
+                </div>
+                <div class="col">
+                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                        <input type="date" class="form-control" id="floatingInput14" placeholder="120.50">
+                        <label for="floatingInput14">Date</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                    <input type="text" class="form-control" id="floatingInput15" placeholder="Biscuits">
+                    <label for="floatingInput15">Balance</label>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col col-lg-8"></div>
+                <div class="col mt-5 col-lg-2">
+                    <div></div>
+                    <button type="button" class="btn btn-info">Update Order</button>
+                </div>
+                <div class="col mt-5 col-lg-2">
+                    <button type="button" class="btn btn-danger">Remove Order</button>
+                </div>
+            </div>
         </form>
     </section>
 
-    <div>
-        <button type="button">Update Order</button>
-        <button type="button">Remove Order</button>
-        <button type="button"> View Orders</button>
+    <div id="viewAll">
+        <button type="button" class="btn btn-warning">View Orders</button>
     </div>
 
 </main>
 
 <footer>
-    <h5>Log Out</h5>
-    <a href=""><img src="assets/images/icons8-logout-80.png" alt="Log Out" ></a>
+    <div>
+        <h5>Log Out</h5>
+        <a href=""><img src="assets/images/icons8-logout-80.png" alt="Log Out" ></a>
+    </div>
 </footer>
 </body>
 </html>
