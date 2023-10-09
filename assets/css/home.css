@@ -36,14 +36,15 @@ footer{
 #company_logo{
     position: absolute;
     right: 0;
+    bottom: 0;
 }
 footer>h4{
     position: absolute;
 
 }
 #sales_chart{
-    margin-left: 15vw;
-    margin-top: 20vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
 }
 #row2{
     padding-top: 25vh;
@@ -57,13 +58,18 @@ footer>h4{
 .promo{
     padding-left: 18vw ;
 }
+footer>h4{
+    bottom: 2vh;
+    left: 4vw;
+}
+
 @media all and (min-width:1440px){
 
 
     #company_logo{
         width: 120px;
         height: 80px;
-        bottom: 0;
+
     }
     #problem_img{
         position: absolute;
@@ -76,9 +82,61 @@ footer>h4{
         bottom: 0;
         left: 27vw;
     }
-    footer>h4{
-        bottom: 2vh;
-        left: 4vw;
+
+
+
+}
+@media all and (max-width:769px){
+
+    #account_details, #navbarNav{
+        display: none;
     }
 
+    #place_order>a>img{
+        width: 150px;
+        margin-left: 35vw;
+        margin-top: 5vh;
+    }
+    .promo{
+        padding-left: 20vw ;
+    }
+    #company_logo{
+        width: 150px;
+    }
+    #email, #problem_img{
+        width: 80px;
+        bottom: 0;
+    }
+    footer>h4{
+        font-size: 16px;
+    }
+
+}
+@media all and (max-width:425px){
+
+    #account_details{
+        display: none;
+    }
+
+    #place_order>a>img{
+        width: 100px;
+
+    }
+    #row3{
+        padding-top: 10vh;
+    }
+    .promo{
+           padding-left: 25vw ;
+    }
+    #company_logo{
+        width: 100px;
+    }
+    #email, #problem_img{
+        width: 55px;
+        bottom: 0;
+
+    }
+    footer>h4{
+        font-size: 11px;
+    }
 }
