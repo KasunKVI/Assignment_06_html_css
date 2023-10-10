@@ -209,3 +209,10 @@ footer>div>h5{
     right: 10vw;
     margin-top: 5vh;
 }
+#searchbar2{
+    padding-top: 10vh;
+    padding-left: 15vw;
+}
+#addItemBtn{
+    padding-left: 15vw;
+}
