@@ -27,3 +27,25 @@ footer>div>h5{
     color: red;
     font-weight: bold;
 }
+@media all and (max-width:769px){
+
+    #navbarNav{
+        display: none;
+    }
+}
+@media all and (max-width:425px){
+    #searchbar {
+        padding-top: 10vh;
+        padding-left: 10vw;
+    }
+    #addItemBtn{
+        padding-left: 5vw;
+    }
+    #item_details{
+        margin-left: 3vw;
+        margin-right: 3vw;
+        padding-left: 3vw;
+    }
+    .table{
+    }
+}
