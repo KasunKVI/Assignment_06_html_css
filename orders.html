@@ -57,12 +57,12 @@
             <legend> Invoice Details </legend>
 
             <div class="row mb-4">
-                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                <div class="col form-floating mb-5 mt-5 col-lg-5 col-md-5 col-sm-10 col-10">
                     <input type="text" class="form-control" id="floatingInput" placeholder="I001">
                     <label for="floatingInput">Order ID</label>
                 </div>
                 <div class="col">
-                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                    <div class="form-floating mb-3 mt-5 col-lg-7 col-md-8 col-sm-10 col-10">
                         <input type="date" class="form-control" id="floatingInput2" placeholder="10/05/2022">
                         <label for="floatingInput2">Date</label>
                     </div>
@@ -70,20 +70,18 @@
             </div>
 
             <div class="row mb-4">
-                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                <div class="col form-floating mb-5 mt-5 col-lg-5 col-md-5 col-sm-10 col-10">
                     <input type="text" class="form-control" id="floatingInput3" placeholder="C001">
                     <label for="floatingInput3"> Customer Id</label>
                 </div>
-                <div class="col">
-                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                    <div class="col form-floating mb-3 mt-5 col-lg-4 col-md-5 col-sm-10 col-10">
                         <input type="text" class="form-control" id="floatingInput4" placeholder="Kamal">
                         <label for="floatingInput4">Customer Name</label>
                     </div>
-                </div>
             </div>
             <div class="row mb-4">
                 <div class="col">
-                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                    <div class="form-floating mb-3 mt-5 col-lg-9 col-md-10 col-sm-10 col-10">
                         <input type="tel" class="form-control" id="floatingInput5" placeholder="07********">
                         <label for="floatingInput5">Customer Contact</label>
                     </div>
@@ -96,7 +94,7 @@
 
     <div class="row">
 
-        <div class="col col-lg-8">
+        <div class="col col-lg-8 col-md-7 col-sm-12 col-12">
             <section class="container_item">
 
                 <form id="item_Details">
@@ -104,24 +102,24 @@
                 <legend>Item Details</legend>
 
                     <div class="row mb-4">
-                        <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                        <div class="col form-floating mb-5 mt-5 col-lg-5 col-md-10 col-sm-5 col-6">
                             <input type="text" class="form-control" id="floatingInput6" placeholder="S001">
                             <label for="floatingInput6">Item ID</label>
                         </div>
                         <div class="col">
-                            <div class="form-floating mb-3 mt-5 col-lg-8">
+                            <div class="form-floating mb-3 mt-5 col-lg-7 col-md-10 col-sm-9 col-10">
                                 <input type="number" class="form-control" id="floatingInput7" placeholder="12">
                                 <label for="floatingInput7">QTY</label>
                             </div>
                         </div>
                     </div>
                     <div class="row mb-4">
-                        <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                        <div class="col form-floating mb-5 mt-5 col-lg-5 col-md-10 col-sm-5 col-6">
                             <input type="text" class="form-control" id="floatingInput8" placeholder="Biscuits">
                             <label for="floatingInput8">Item Name</label>
                         </div>
                         <div class="col">
-                            <div class="form-floating mb-3 mt-5 col-lg-8">
+                            <div class="form-floating mb-3 mt-5 col-lg-7 col-md-10 col-sm-9 col-10">
                                 <input type="text" class="form-control" id="floatingInput9" placeholder="120.50">
                                 <label for="floatingInput9">Price</label>
                             </div>
@@ -129,27 +127,27 @@
                     </div>
 
                     <div class="row mb-4">
-                        <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+
+                        <div class="col form-floating mb-5 mt-5 col-lg-5 col-md-10 col-sm-5 col-6">
+
                             <input type="date" class="form-control" id="floatingInput10" placeholder="05/05/2024">
                             <label for="floatingInput10">Exp Date</label>
+
                         </div>
-                        <div class="col">
-                            <div class="select-box">
-                                <label for="Item"></label>
-                                <select id="Item">
-                                    <option hidden="">Size</option>
-                                    <option>None</option>
-                                    <option>220g</option>
-                                    <option>450g</option>
-                                    <option>1kg</option>
-                                </select>
-                            </div>
+
+                        <div class="col form-floating  mb-3 mt-5 col-lg-4 col-md-10 col-sm-5 col-5">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>None</option>
+                                <option value="1">220g</option>
+                                <option value="2">450g</option>
+                                <option value="3">1kg</option>
+                            </select>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col col-lg-8"></div>
-                        <div class="col mt-5 col-lg-2">
+                        <div class="col col-lg-7 col-md-4 col-sm-4 col-5"></div>
+                        <div class="col mt-5 col-lg-5 col-md-8 col-sm-8 col-7">
                             <button type="button" class="btn btn-danger">Add to Cart</button>
                         </div>
                     </div>
@@ -160,7 +158,7 @@
 
 
 
-            <div class="col col-lg-4">
+            <div class="col col-lg-4 col-md-3 col-sm-10 col-10">
                 <div id="total">
                     <div class="container2">
                         <div class="card cart">
@@ -214,8 +212,9 @@
 
         <div class="row">
 
-            <div class="col col-lg-2"></div>
-            <div class="col col-lg-8">
+            <div class="col col-lg-2 col-md-2 col-sm-2 col-1"></div>
+            <div class="col col-lg-8 col-md-8 col-sm-8 col-10">
+                <div class="table-responsive">
                 <table class="table table-hover table-striped-columns">
                     <thead class="table-dark">
                     <tr>
@@ -250,8 +249,9 @@
                     </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
-            <div class="col col-lg-2"></div>
+            <div class="col col-lg-2 col-md-2 col-sm-2 col-1"></div>
         </div>
 
     </section>
@@ -260,13 +260,13 @@
 
     <div id="searchbar2">
         <div class="row">
-            <div class="col col-lg-4">
+            <div class="col col-lg-4 col-md-5 col-6">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
             </div>
 
-            <div class="col col-lg-4">
+            <div class="col col-lg-4 col-md-5 col-6">
                 <div id="addItemBtn">
                     <button type="button" class="btn btn-warning">Search Order</button>
                 </div>
@@ -281,43 +281,39 @@
             <legend>Order Details</legend>
 
             <div class="row mb-4">
-                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+
+                <div class="col form-floating mb-5 mt-5 col-lg-5 col-md-5 col-sm-5 col-6">
                     <input type="text" class="form-control" id="floatingInput11" placeholder="S001">
                     <label for="floatingInput11">Order ID</label>
                 </div>
-                <div class="col">
-                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                    <div class="col form-floating  mb-3 mt-5 col-lg-7 col-md-4 col-sm-6 col-6">
                         <input type="text" class="form-control" id="floatingInput12" placeholder="12">
                         <label for="floatingInput12">Customer ID</label>
                     </div>
-                </div>
             </div>
             <div class="row mb-4">
-                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                <div class="col form-floating mb-5 mt-5 col-lg-5 col-md-5 col-sm-5 col-6">
                     <input type="text" class="form-control" id="floatingInput13" placeholder="Biscuits">
                     <label for="floatingInput13">Name</label>
                 </div>
-                <div class="col">
-                    <div class="form-floating mb-3 mt-5 col-lg-8">
+                    <div class="col form-floating mb-3 mt-5 col-lg-7 col-md-7 col-sm-6 col-6">
                         <input type="date" class="form-control" id="floatingInput14" placeholder="120.50">
                         <label for="floatingInput14">Date</label>
                     </div>
-                </div>
             </div>
             <div class="row mb-4">
-                <div class="col form-floating mb-5 mt-5 col-lg-5 ">
+                <div class="col form-floating mb-5 mt-5 col-lg-7 col-md-9 col-sm-11 col-12">
                     <input type="text" class="form-control" id="floatingInput15" placeholder="Biscuits">
                     <label for="floatingInput15">Balance</label>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col col-lg-8"></div>
-                <div class="col mt-5 col-lg-2">
-                    <div></div>
+                <div class="col col-lg-8 col-md-2 col-sm-2 col-2"></div>
+                <div class="col mt-5 col-lg-2 col-md-5 col-sm-5 col-5">
                     <button type="button" class="btn btn-info">Update Order</button>
                 </div>
-                <div class="col mt-5 col-lg-2">
+                <div class="col mt-5 col-lg-2 col-md-5 col-sm-5 col-5">
                     <button type="button" class="btn btn-danger">Remove Order</button>
                 </div>
             </div>

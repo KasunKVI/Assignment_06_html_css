@@ -216,3 +216,85 @@ footer>div>h5{
 #addItemBtn{
     padding-left: 15vw;
 }
+@media all and (max-width:1024px){
+    .card {
+        width: 280px;
+    }
+    .input_field {
+        width: 150px;
+
+    }
+}
+@media all and (max-width:1023px){
+    #navbarNav{
+        display: none;
+    }
+}
+@media all and (max-width:768px){
+
+
+    .card {
+        width: 280px;
+    }
+    .input_field {
+        width: 150px;
+
+    }
+
+}
+@media all and (max-width:640px) {
+
+    .container_item {
+        padding-right: 4vw;
+        margin-left: 6%;
+
+    }
+    .card{
+        margin-left: 30%;
+    }
+    #searchbar2{
+        padding-left: 5%;
+    }
+    #order_details{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    #viewAll{
+        right: 20vw;
+    }
+}
+
+@media all and (max-width:425px){
+    #searchbar2{
+        padding-top: 10vh;
+        padding-left: 10vw;
+    }
+    #addItemBtn{
+        padding-left: 5vw;
+    }
+    #order_details{
+        margin-left: 4vw;
+        margin-right: 4vw;
+        padding-left: 3vw;
+    }
+    .container_item {
+        padding-right: 4vw;
+
+    }
+    .card{
+        margin-left: 15vw;
+    }
+    #item_Details{
+        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #viewAll{
+        right: 25vw;
+    }
+}
+@media all and (max-width:320px){
+    .card{
+        margin-left: 10%;
+    }
+}
