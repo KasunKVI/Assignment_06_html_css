@@ -27,12 +27,12 @@ footer>div>h5{
     color: red;
     font-weight: bold;
 }
-@media all and (max-width:769px){
-
+@media all and (max-width:1023px){
     #navbarNav{
         display: none;
     }
 }
+
 @media all and (max-width:425px){
     #searchbar {
         padding-top: 10vh;
@@ -46,6 +46,13 @@ footer>div>h5{
         margin-right: 3vw;
         padding-left: 3vw;
     }
-    .table{
+
+}
+@media all and (max-width:320px){
+    #item_details{
+        margin-left: 3vw;
+        margin-right: 3vw;
+        padding-left: 2vw;
     }
+
 }

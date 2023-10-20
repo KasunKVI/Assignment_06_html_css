@@ -42,8 +42,7 @@ footer>div>h5{
 .card{
     margin-top: 5vh;
 }
-@media all and (max-width:769px){
-
+@media all and (max-width:1023px){
     #navbarNav{
         display: none;
     }

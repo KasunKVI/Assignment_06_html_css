@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden !important;
+}
 main{
     height: 100vh;
     padding-bottom: 180vh;
@@ -62,8 +65,13 @@ footer>h4{
     bottom: 2vh;
     left: 4vw;
 }
+#place_order > a > img {
+   position: absolute;
+    right: 1vw;
+}
 
-@media all and (min-width:1440px){
+
+@media all and (min-width:1024px){
 
 
     #company_logo{
@@ -112,6 +120,22 @@ footer>h4{
     }
 
 }
+@media all and (max-width:640px) {
+    .promo{
+        padding-left: 26vw ;
+        padding-top: 15vh;
+
+    }
+}
+@media all and (max-width:768px) {
+
+    .promo{
+        padding-left: 6vw ;
+        padding-top: 5vh;
+
+    }
+
+}
 @media all and (max-width:425px){
 
     #account_details{
@@ -138,5 +162,33 @@ footer>h4{
     }
     footer>h4{
         font-size: 11px;
+    }
+}
+@media all and (max-width:1024px){
+    #company_logo{
+        width: 120px;
+        height: 80px;
+
+    }
+
+    #place_order>a>img{
+        width: 150px;
+        margin-right: 6vw;
+        margin-top: 5vh;
+    }
+}
+
+@media all and (max-width:1023px){
+    #account_details{
+       display: none;
+    }
+    #email, #problem_img{
+        width: 55px;
+        bottom: 0;
+
+    }
+    .promo{
+        padding-left: 8vw ;
+
     }
 }
