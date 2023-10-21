@@ -8,6 +8,10 @@ main{
     border-color: white white brown brown;
     text-align: center;
     margin-left: 25vw;
+
+    position: absolute;
+    width: 25vw;
+    right: 0;
 }
 #account_details>div>img{
     border-radius: 50%;
@@ -94,9 +98,6 @@ footer>h4{
 }
 @media all and (max-width:769px){
 
-    #account_details, #navbarNav{
-        display: none;
-    }
 
     #place_order>a>img{
         width: 150px;
@@ -136,9 +137,6 @@ footer>h4{
 }
 @media all and (max-width:425px){
 
-    #account_details{
-        display: none;
-    }
 
     #place_order>a>img{
         width: 100px;
@@ -177,6 +175,7 @@ footer>h4{
 }
 
 @media all and (max-width:1023px){
+
     #account_details{
        display: none;
     }
@@ -188,5 +187,10 @@ footer>h4{
     .promo{
         padding-left: 8vw ;
 
+    }
+    #account_details{
+        display: none;
+        right: -25vw;
+        width: 20vw;
     }
 }
