@@ -47,6 +47,6 @@ $("#nav-icon-setting-close").on("click", () => {
     setTimeout(() => {
         $("#account_details").css("opacity", "0");
         $("#nav-icon-setting-close").css("opacity" , "0");
-        $("#account_details").css("transform", "translateY(-40vh");
+        $("#account_details").css("transform", "translateY(-50vh");
     }, 200);
 });

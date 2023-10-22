@@ -8,9 +8,7 @@ main{
     border-color: white white brown brown;
     text-align: center;
     margin-left: 25vw;
-
     position: absolute;
-    width: 25vw;
     right: 0;
 }
 #account_details>div>img{
@@ -121,11 +119,13 @@ footer>h4{
 
 }
 @media all and (max-width:640px) {
+
     .promo{
         padding-left: 26vw ;
         padding-top: 15vh;
 
     }
+
 }
 @media all and (max-width:768px) {
 
@@ -140,7 +140,7 @@ footer>h4{
 
 
     #place_order>a>img{
-        width: 100px;
+        width: 70px;
 
     }
     #row3{

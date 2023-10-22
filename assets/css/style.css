@@ -62,12 +62,24 @@ body{
 }
 
 @media all and (min-width:1024px){
+
+    #account_details{
+        display: block !important;
+        width: 25vw;
+    }
     #nav-icon-open {
+        display: none !important;
+    }
+    #nav-icon-close{
         display: none !important;
     }
     #nav-icon-setting{
         display: none !important;
     }
+    #nav-icon-setting-close{
+        display: none !important;
+    }
+
 }
 @media all and (max-width:1023px){
 
@@ -100,7 +112,7 @@ body{
         width: 30vw;
     }
     #account_details{
-        width: 55vw;
+        width: 45vw;
     }
 }
 @media all and (max-width:425px){
@@ -109,7 +121,7 @@ body{
         width: 30vw;
     }
     #account_details{
-        width: 35vw;
+        width: 55vw;
     }
 }
 @media all and (max-width:320px){
@@ -118,6 +130,6 @@ body{
         width: 35vw;
     }
     #account_details{
-        width: 35vw;
+        width: 55vw;
     }
 }
