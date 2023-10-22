@@ -70,6 +70,7 @@ footer>h4{
 #place_order > a > img {
    position: absolute;
     right: 3vw;
+    top: 78vh;
 }
 
 
@@ -188,9 +189,5 @@ footer>h4{
         padding-left: 8vw ;
 
     }
-    #account_details{
-        display: none;
-        right: -25vw;
-        width: 20vw;
-    }
+
 }
